@@ -100,5 +100,4 @@ response:
 
 #### Medición
 
-GET - api/mediciones?forma=uuid&pagina=int&porPagina=int  response    {      "mediciones": Array[Medicion],    }
-POST - api/medicion  response    {      "medicion": Medicion    }
+GET - api/mediciones?forma=uuid&pagina=int&porPagina=int  response    {      "mediciones": Array[Medicion],    }                 POST - api/medicion  response    {      "medicion": Medicion    }
