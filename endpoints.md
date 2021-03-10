@@ -64,7 +64,7 @@ POST - api/reset_password
 #### Formas
 
 ```
-GET - api/formas?porPagina=int&pagina=int
+GET - api/formas?porPagina=int&pagina=int&titulo=Str
   response:
     {
       "formas": Array[Forma],
