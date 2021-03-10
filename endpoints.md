@@ -3,7 +3,7 @@
 #### Usuarios
 
 ```
-GET - api/usuarios
+GET - api/usuarios?apellidos=Str&nombres=Str
 (ordenados alfabéticamente por apellido, 20 por página)
 
   response:
