@@ -38,7 +38,6 @@ DELETE - api/usuario/:id
 
 ```
 
-
 #### Login
 
 ```
@@ -61,7 +60,6 @@ POST - api/reset_password
       "status": HTTPStatus
     }
 ```
-
 
 #### Formas
 
@@ -101,7 +99,7 @@ response:
 #### Medición
 
 ```
-GET - api/mediciones?forma=uuid&pagina=int&porPagina=int
+GET - api/mediciones?forma=uuid&pagina=int&porPagina=int&recientes=Bool
   response
    {
      "mediciones": Array[Medicion]
@@ -114,5 +112,3 @@ POST - api/medicion
  }
 
 ```
-
-GET - api/mediciones?forma=uuid&pagina=int&porPagina=int  response    {      "mediciones": Array[Medicion],    }                 POST - api/medicion  response    {      "medicion": Medicion    }

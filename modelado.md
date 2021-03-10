@@ -2,8 +2,6 @@
 
 ## Modelado
 
-*NOTA: Todos los modelos tienen "id" (uso interno en la base de datos), "fecha_creacion", "fecha_ultima_modificacion"*
-
 *Los campos que no permiten repeticiones son procedidos por la palabra "UNIQUE", todo campo de id no permite repeticiones dentro de su relación (documento)*
 
 *Los campos que sirven *
@@ -68,11 +66,11 @@ Medicion: {
     Modelo genérico de las mediciones que son tomadas con respecto a cada forma.
     """
     id: uuid,
-    capturador: Usuario,                              "AUTO"
+    capturador: uuid,                              "AUTO"
     fecha_captura: Date,                              "AUTO"
     hora_captura: Time,                               "AUTO"
     forma: uuid,                                      "AUTO FOREIGN KEY"
-    medición: documento
+    medición: Array[CampoForma]
 }
 
 Usuario: {
