@@ -77,6 +77,13 @@ GET - api/forma/:id
       "forma": Forma,
     }
 
+GET - api/forma/:id/mediciones
+  response:
+    {
+      'Content-Type': 'text/csv',
+      'Content-disposition': 'attachment;filename=' + filename
+    }
+
 POST - api/forma
   response:
     {
